@@ -5,15 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script defer src="./main.js"></script>
 </head>
 <body>
   <header>
-    <nav class="menu"></nav>
+    <nav class="sources"></nav>
   </header>
   <main>
     <div class="news"></div>
   </main>
   <footer></footer>
+
+  <template id="sourceItemTemplate">
+    <button class="source__item"></button>
+  </template>
+
+  <template id="newsItemTemplate">
+    <section class="news__item">
+      <h2 class="news__title"></h2>
+      <span class="news__author"></span>
+      <p class="news__content"></p>
+    </section>
+  </template>
+
+  <script src="js/NewsApiLoader.js"></script>
+  <script src="js/AppController.js"></script>
+
+  <script src="js/News.js"></script>
+  <script src="js/Sources.js"></script>
+  <script src="js/AppView.js"></script>
+
+  <script src="js/App.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
